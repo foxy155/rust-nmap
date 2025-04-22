@@ -4,9 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-socket2 = "0.5.9"
 clap = {version = "4.5.36", features = ["cargo"]}
 rayon = "1.10.0"
-indicatif = "0.17.11"
 tokio = {version = "1.44.2",features = ["full"]}
 futures = "0.3.31"
