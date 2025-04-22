@@ -36,7 +36,6 @@ fn get_service_name(port: u16) -> &'static str {
 async fn main() {
     let match_result: ArgMatches = command!()
         .arg(Arg::new("ip_address").short('a').long("ip_address").required(true).help("IP address of the target to scan"))
-        .arg(Arg::new("method").short('m').long("method").help("Method like TCP/UDP include if you want to change to UDP (default TCP)").action(ArgAction::SetTrue))
         .arg(Arg::new("end_port").short('e').long("ending_port").required(true).help("the last port to get to while scanning"))
         .arg(Arg::new("start_port").short('s').long("starting_port").required(true).help("from what port to start scanning"))
         .arg(Arg::new("port_scan").short('p').long("port-scan").help("a single port to scan"))
